@@ -1,7 +1,12 @@
+import Navbar from "../components/navbar";
+
 function Events() {
 	return (
 		<>
-			<h1 className="text-3xl font-bold">events</h1>
+			<Navbar />
+			<div className="flex justify-center">
+				<h1 className="text-3xl font-bold text-center">Events</h1>
+			</div>
 		</>
 	);
 }
