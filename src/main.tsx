@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Index from './pages/index.tsx'
 import About from './pages/about.tsx'
 import Resources from './pages/resources.tsx';
@@ -9,7 +9,7 @@ import Events from './pages/events.tsx';
 import Alumni from './pages/alumni.tsx';
 import './index.css'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: "/",
 		element: <Index />,
