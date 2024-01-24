@@ -33,20 +33,31 @@ function section(title:string, id:string) {
 function About() {
 	return (
 		<>
-			<Navbar />
+			<div className="z-10 absolute w-screen">
+				<Navbar />
+			</div>
 			<div className="flex flex-col items-center mx-20 px-10">
 				<h1 className="text-4xl font-bold text-center">About</h1>
 				<img src="/officers/about.jpg" className="w-full p-10" />
-			
+
 				<div className="flex flex-col items-start mb-5 w-4/5">
-					<h2 className="text-xl mb-2">A team of like-minded students ready to help you learn the skills to succeed!</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id aliquam aliquam, nunc nunc aliquet nunc, vitae aliquam nunc nunc vitae. Sed euismod, diam id aliquam aliquam, nunc nunc aliquet nunc, vitae aliquam nunc nunc vitae.</p>
+					<h2 className="text-xl mb-2">
+						A team of like-minded students ready to help you learn
+						the skills to succeed!
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed euismod, diam id aliquam aliquam, nunc nunc aliquet
+						nunc, vitae aliquam nunc nunc vitae. Sed euismod, diam
+						id aliquam aliquam, nunc nunc aliquet nunc, vitae
+						aliquam nunc nunc vitae.
+					</p>
 				</div>
 				<div className="flex flex-col items-center">
-					{ section("Executive Board", "executive") }
-					{ section("Technical Team", "technical") }
-					{ section("Design & Outreach", "design") }
-					{ section("Sponsorships Team", "sponsorships") }
+					{section("Executive Board", "executive")}
+					{section("Technical Team", "technical")}
+					{section("Design & Outreach", "design")}
+					{section("Sponsorships Team", "sponsorships")}
 				</div>
 			</div>
 		</>
